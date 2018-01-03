@@ -8,21 +8,14 @@ var browserSync = new BrowserSyncPlugin({
 });
 
 module.exports = {
-  devtool: 'source-map',
-  entry: './source/index.js',
+  devtool: 'none',
+  entry: './index.js',
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'public')
   },
   module: {
     rules: [
-      { // SCSS
-        test: /\.scss$/,
-        use: [
-          { loader: 'css-loader', options: { sourceMap: true } },
-          { loader: 'sass-loader', options: { sourceMap: true, includePaths: ['./source/sass'] }}
-        ]
-      },
       { // JavaScript
         test: /\.js$/,
         use: [
