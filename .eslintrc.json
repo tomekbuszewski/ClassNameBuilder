@@ -1,0 +1,78 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "React": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "arrow-spacing": "error",
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "eqeqeq": "error",
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "newline-before-return": "warn",
+    "no-alert": "warn",
+    "no-bitwise": "error",
+    "no-dupe-args": "error",
+    "no-empty": "error",
+    "no-extra-semi": "warn",
+    "no-invalid-this": "error",
+    "no-irregular-whitespace": "warn",
+    "no-loop-func": "error",
+    "no-mixed-spaces-and-tabs": [
+      "error",
+      "smart-tabs"
+    ],
+    "no-multiple-empty-lines": "warn",
+    "no-prototype-builtins": "warn",
+    "no-redeclare": "error",
+    "no-this-before-super": "error",
+    "no-unreachable": "warn",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "local"
+      }
+    ],
+    "no-use-before-define": "error",
+    "prefer-const": "warn",
+    "prefer-template": "warn",
+    "react/jsx-no-bind": [
+      "warn",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "react/jsx-pascal-case": "error",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/prefer-stateless-function": "warn",
+    "react/require-render-return": "error",
+    "valid-jsdoc": "error",
+    "yoda": "error"
+  },
+  "plugins": [
+    "react"
+  ]
+}
