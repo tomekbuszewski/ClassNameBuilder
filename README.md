@@ -29,6 +29,6 @@ const c = new ClassNameBuilder(style, 'Modal');
 const base = c.get(); // returns `Modal`
 const header = c.get({ e: 'header' }); // returns `Modal__header`
 const small = c.get({ m: 'small' }); // returns `Modal--small'
-const headerLarge = c.get({ e: 'header', m: 'large' }); // returns `Modal__header--small`
+const headerLarge = c.get({ e: 'header', m: 'large' }); // returns `Modal__header--large`
 const nonExistent = c.get({ e: 'error' }); // returns `` (empty string)
 ```

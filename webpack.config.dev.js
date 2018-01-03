@@ -9,7 +9,7 @@ var browserSync = new BrowserSyncPlugin({
 
 module.exports = {
   devtool: 'source-map',
-  entry: './index.js',
+  entry: './source/index.js',
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'public')

@@ -1,4 +1,21 @@
 {
+  "name": "class-name-builder",
+  "author": {
+    "name": "Tomek Buszewski",
+    "email": "tomek.buszewski@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomekbuszewski/ClassNameBuilder"
+  },
+  "version": "1.0.0",
+  "keywords": [
+    "classnames",
+    "classes",
+    "vanilla"
+  ],
+  "license": "MIT",
+  "main": "./public/index.js",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.24.0",

@@ -3,9 +3,6 @@
     "browser": true,
     "node": true
   },
-  "globals": {
-    "React": true
-  },
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -57,22 +54,7 @@
     "no-use-before-define": "error",
     "prefer-const": "warn",
     "prefer-template": "warn",
-    "react/jsx-no-bind": [
-      "warn",
-      {
-        "allowArrowFunctions": true
-      }
-    ],
-    "react/jsx-pascal-case": "error",
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "react/no-direct-mutation-state": "error",
-    "react/prefer-stateless-function": "warn",
-    "react/require-render-return": "error",
     "valid-jsdoc": "error",
     "yoda": "error"
-  },
-  "plugins": [
-    "react"
-  ]
+  }
 }
