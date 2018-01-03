@@ -1,5 +1,6 @@
 {
   "name": "class-name-builder",
+  "description": "Simple class for generating class names from style objects",
   "author": {
     "name": "Tomek Buszewski",
     "email": "tomek.buszewski@gmail.com"
@@ -25,7 +26,6 @@
     "babel-preset-stage-0": "^6.24.1",
     "browser-sync": "^2.18.8",
     "browser-sync-webpack-plugin": "^1.1.4",
-    "css-loader": "^0.27.3",
     "eslint": "^3.19.0",
     "eslint-loader": "^1.7.1",
     "jest": "^21.2.1",
