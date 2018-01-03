@@ -1,5 +1,5 @@
 # Class Name Builder
-Simple class for building class names from css modules.
+Simple class for building BEM class names from css modules.
 
 ## Usage
 #### SCSS

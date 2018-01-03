@@ -1,6 +1,6 @@
 {
-  "name": "class-name-builder",
-  "description": "Simple class for generating class names from style objects",
+  "name": "bem-classname-builder",
+  "description": "Simple class for generating BEM class names from style objects",
   "author": {
     "name": "Tomek Buszewski",
     "email": "tomek.buszewski@gmail.com"
