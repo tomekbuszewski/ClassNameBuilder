@@ -2,9 +2,10 @@
  * Class for generating class names from style objects
  */
 export default class ClassNameBuilder {
-  constructor(style, block) {
+  constructor(style, block, extended = false) {
     this.style = style;
     this.block = block;
+    this.extended = extended;
   }
 
   /**
@@ -28,6 +29,10 @@ export default class ClassNameBuilder {
     const element = typeof config !== 'undefined' && typeof config.e !== 'undefined' ? `__${config.e}` : '';
     const modifier = typeof config !== 'undefined' && typeof config.m !== 'undefined' ? `--${config.m}` : '';
 
-    return this.generateBem(element, modifier);
+    if (element !== '' && modifier !== '' && this.extended === true) {
+      return `${this.generateBem(element, '')} ${this.generateBem(element, modifier)}`;
+    } else {
+      return this.generateBem(element, modifier);
+    }
   }
 }
