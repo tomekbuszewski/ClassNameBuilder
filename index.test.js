@@ -32,9 +32,15 @@ describe('Class name builder tests', () => {
     expect(classname.get({ m: 'small' })).toBe('modal small');
   });
 
-  it ('should fetch proper element with modifier', () => {
+  it ('should fetch proper element and its modifier', () => {
+    const classname = new c(style, 'Modal', true);
+
+    expect(classname.get({ e: 'header', m: 'small' })).toBe('modal header modal header small');
+  });
+
+  it ('should fetch proper element with modifier, but without separate element', () => {
     const classname = new c(style, 'Modal');
 
-    expect(classname.get({ e: 'header', m: 'small' })).toBe('modal header small');
+    expect(classname.get({ e: 'header', m: 'small' }, true)).toBe('modal header small');
   });
 });
