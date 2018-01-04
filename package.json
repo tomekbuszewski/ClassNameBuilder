@@ -1,22 +1,29 @@
 {
+  "name": "bem-classname-builder",
+  "description": "Simple class for generating BEM class names from style objects",
+  "author": {
+    "name": "Tomek Buszewski",
+    "email": "tomek.buszewski@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomekbuszewski/ClassNameBuilder"
+  },
+  "version": "1.1.0",
+  "keywords": [
+    "classnames",
+    "classes",
+    "vanilla"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
   "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-jest": "^21.2.0",
-    "babel-loader": "^6.4.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "browser-sync": "^2.18.8",
-    "browser-sync-webpack-plugin": "^1.1.4",
-    "css-loader": "^0.27.3",
     "eslint": "^3.19.0",
     "eslint-loader": "^1.7.1",
-    "jest": "^21.2.1",
-    "webpack": "^3.10.0"
+    "jest": "^21.2.1"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.dev.js",
-    "prod": "webpack -p --config webpack.config.prod.js",
     "test": "jest --coverage"
   }
 }
