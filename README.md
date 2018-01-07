@@ -26,7 +26,7 @@ as the third argument will result in generating two classes instead of one
 when fetching for element with modifier. Please see `headerLarge` example.
 
 ```js
-import ClassNameBuilder from 'class-name-builder';
+import ClassNameBuilder from 'bem-classname-builder';
 import style from './style.scss';
 
 const c = new ClassNameBuilder(style, 'Modal');
