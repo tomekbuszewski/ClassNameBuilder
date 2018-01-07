@@ -28,6 +28,6 @@
   },
   "scripts": {
     "test": "jest --coverage",
-    "build": "webpack -p"
+    "build": "webpack"
   }
 }

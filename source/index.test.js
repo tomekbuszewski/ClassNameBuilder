@@ -1,4 +1,4 @@
-import c from './source/index';
+import c from './index';
 
 const style = {
   'Modal': 'modal',

@@ -1,7 +1,7 @@
 /**
  * Class for generating class names from style objects
  */
-export default class ClassNameBuilder {
+class ClassNameBuilder {
   constructor(style, block, extended = false) {
     this.style = style;
     this.block = block;
@@ -36,3 +36,5 @@ export default class ClassNameBuilder {
     }
   }
 }
+
+export default ClassNameBuilder;
