@@ -9,21 +9,24 @@
     "type": "git",
     "url": "https://github.com/tomekbuszewski/ClassNameBuilder"
   },
-  "version": "1.2.0",
+  "version": "1.2.2",
   "keywords": [
     "classnames",
     "classes",
     "vanilla"
   ],
   "license": "MIT",
-  "main": "./index.js",
-  "dependencies": {},
+  "main": "./public/index.js",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^3.19.0",
-    "eslint-loader": "^1.7.1",
     "jest": "^21.2.1"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "build": "babel ./source/index.js -o ./public/index.js"
   }
 }
