@@ -18,16 +18,15 @@
   "license": "MIT",
   "main": "./public/index.js",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^3.19.0",
-    "eslint-loader": "^1.7.1",
-    "jest": "^21.2.1",
-    "webpack": "^3.10.0"
+    "jest": "^21.2.1"
   },
   "scripts": {
     "test": "jest --coverage",
-    "build": "webpack"
+    "build": "babel ./source/index.js -o ./public/index.js"
   }
 }
